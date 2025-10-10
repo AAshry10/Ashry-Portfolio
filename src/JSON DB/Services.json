@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Front-End Development",
+    "description": "Create stunning, responsive websites with modern technologies like React, JavaScript, HTML5, and CSS3. I build user-friendly interfaces that deliver seamless experiences across all devices.",
+    "background": "linear-gradient(135deg, #764ba2 0%, #764ba2 100%)",
+    "popuplogo": "fa-solid fa-code",
+    "popupdescription": "Crafting modern, responsive, and accessible interfaces with React.js, Next.js, and modern tooling to deliver smooth, SEO-friendly user experiences.",
+    "popupfeatureslist": [
+      "Modern technology stack",
+      "Responsive design principles", 
+      "Performance optimization",
+      "Best practices implementation"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Building Shopify Sites",
+    "description": "Professional Shopify store development with custom themes, apps integration, and e-commerce optimization. Boost your online sales with a beautifully designed and fully functional store.",
+    "background": "linear-gradient(135deg, #667eea 0%, #667eea 100%)",
+    "popuplogo": "fa-solid fa-store",
+    "popupdescription": "Professional Shopify store development with custom themes, apps integration, and e-commerce optimization to boost your online sales with a beautifully designed and fully functional store.",
+    "popupfeatureslist": [
+      "Custom theme development",
+      "App integration",
+      "E-commerce optimization",
+      "Mobile-first approach"
+    ]
+  }
+]

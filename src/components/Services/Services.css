@@ -92,7 +92,7 @@
 
 .service-btn:hover {
     background: white;
-    color: var(--text-color);
+    color: var(--bg-color);
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

@@ -1,40 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, Row, Col, Badge } from 'react-bootstrap';
 import './Portfolio.css';
+import projectsData from '../../JSON DB/Projects.json';
 
 const Portfolio = () => {
   const navigate = useNavigate();
+  const [projects, setProjects] = useState([]);
 
-  const projects = [
-    {
-      id: 'cymate',
-      image: '/assets/Images/Projects/Cymate-Dashboard.png',
-      title: 'Cymate',
-      description: 'CIS Mansoura University Graduation Project',
-      technologies: 'React.Js • Django • Node.Js',
-      year: '2024 - 2025'
-    },
-    {
-      id: 'denimora',
-      image: '/assets/Images/Projects/Denimora-Landing.png',
-      video: '/assets/Videos/Denimora.mp4',
-      title: 'Denimora',
-      description: 'Full E-Commerce Site',
-      detaileddescription: 'Denimora is an e-commerce platform that allows users to buy and sell denim products. It is a full-stack project that uses React.js for the frontend and Django for the backend.',
-      technologies: 'React.Js • django • RESTful',
-      year: '2025'
-    },
-    {
-      id: 'web-portfolio',
-      image: '/assets/Images/Projects/Ashry-Portfolio.png',
-      video: '/assets/Videos/portfolio-demo.mp4',
-      title: 'Web Portfolio',
-      description: 'This portfolio ',
-      technologies: 'React.Js • Bootstrap • JSON',
-      year: '2025'
-    }
-  ];
+  useEffect(() => {
+    setProjects(projectsData);
+  }, []);
 
   const handleProjectClick = (projectId) => {
     navigate(`/project/${projectId}`);

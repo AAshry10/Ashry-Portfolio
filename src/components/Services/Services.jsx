@@ -1,23 +1,28 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import './Services.css';
+import servicesData from '../../JSON DB/Services.json';
+import ServicePopup from '../ServicePopup/ServicePopup';
 
 const Services = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Front-End Development",
-      description: "Create stunning, responsive websites with modern technologies like React, JavaScript, HTML5, and CSS3. I build user-friendly interfaces that deliver seamless experiences across all devices.",
-      background: "linear-gradient(135deg, #764ba2 0%, #764ba2 100%)"
-    },
-    {
-      id: 2,
-      title: "Building Shopify Sites",
-      description: "Professional Shopify store development with custom themes, apps integration, and e-commerce optimization. Boost your online sales with a beautifully designed and fully functional store.",
-      background: "linear-gradient(135deg, #667eea 0%, #667eea 100%)"
-    }
-  ];
+  const [services, setServices] = useState([]);
+  const [selectedService, setSelectedService] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  useEffect(() => {
+    setServices(servicesData);
+  }, []);
+
+  const handleServiceRequest = (service) => {
+    setSelectedService(service);
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+    setSelectedService(null);
+  };
 
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
     loop: true,
@@ -72,7 +77,7 @@ const Services = () => {
                   <div className="service-content">
                     <h3>{service.title}</h3>
                     <p>{service.description}</p>
-                    <button className="service-btn">Request Service</button>
+                    <button className="service-btn" onClick={() => handleServiceRequest(service)}>Request Service</button>
                   </div>
                 </div>
               ))}
@@ -97,6 +102,13 @@ const Services = () => {
           </div>
         </div>
       </div>
+      
+      {/* Service Popup */}
+      <ServicePopup 
+        service={selectedService}
+        isOpen={isPopupOpen}
+        onClose={handleClosePopup}
+      />
     </section>
   );
 };
