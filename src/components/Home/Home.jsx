@@ -67,7 +67,7 @@ const Home = () => {
 
         <div className="hero-buttons">
           <button onClick={handleDownloadCV} className="btn download-resume">Download Resume</button>
-          <a href="#portfolio" className="btn-secondary see-projects">See projects</a>
+          <a href="#portfolio" className="btn-secondary see-projects">Explore Projects</a>
         </div>
 
         <div className="mobile-social">

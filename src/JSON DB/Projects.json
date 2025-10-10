@@ -6,22 +6,28 @@
     "description": "CIS Graduation Project",
     "technologies": "React.Js • Django • Node.Js",
     "year": "2024 - 2025",
-    "detaileddescription": "A graduation project developed for CIS Mansoura University. This comprehensive web application features advanced functionality built with modern technologies. The project demonstrates full-stack development skills with React.js frontend, Django backend, and Node.js services.",
-    "technologiesArray": ["React.js", "Django", "Node.js", "RESTful API", "Python", "JavaScript"],
+    "detaileddescription": "A graduation project developed for CIS Mansoura University. This comprehensive web application features advanced functionality built with modern technologies. The project demonstrates full-stack development skills with React.js frontend, Django backend for community space and user authentication, and Node.js services for the toolkit.",
+    "technologiesArray": ["React.js","Next.js", "Typescript", "Tailwind", "Django", "Node.js", "RESTful API", "Python"],
     "demoVideo": "/assets/Videos/cymate-demo.mp4",
     "repoLink": "https://github.com/AAshry10/Cymate-Frontend",
     "features": [
+      "Cybersecurity Toolkit",
+      "Community Space",
+      "Innovation Hub",
+      "Notifications System",
       "Advanced dashboard interface",
       "Real-time data processing",
-      "User management system",
+      "User Authentication & Authorization",
       "Comprehensive reporting",
-      "Modern UI/UX design"
+      "Modern UI/UX design",
+      "Responsive design",
+      "microservices architecture"
     ]
   },
   {
     "id": "denimora",
     "image": "/assets/Images/Projects/Denimora-Landing.png",
-    "video": "/assets/Videos/Denimora.mp4",
+    "demoVideo": "/assets/Videos/Denimora.mp4",
     "title": "Denimora",
     "description": "Full E-Commerce Site",
     "detaileddescription": "A comprehensive e-commerce platform built for a freelancing client. This project features a modern design, full shopping cart functionality, user authentication, product management, and Bosta shipping integration. Built with React.js frontend and Django backend with RESTful API architecture.",
@@ -33,6 +39,7 @@
       "Full e-commerce functionality",
       "Shopping cart and checkout",
       "Admin panel for stock and business management",
+      "Cart reservation system",
       "Responsive design for all devices",
       "Bosta shipping integration"
     ]
@@ -40,7 +47,7 @@
   {
     "id": "web-portfolio",
     "image": "/assets/Images/Projects/Ashry-Portfolio.png",
-    "video": "/assets/Videos/portfolio-demo.mp4",
+    "demoVideo": "/assets/Videos/portfolio-demo.mp4",
     "title": "Web Portfolio",
     "description": "This portfolio",
     "technologies": "React.Js • Bootstrap • JSON",
@@ -53,7 +60,8 @@
       "Smooth animations",
       "Interactive components",
       "Modern UI/UX",
-      "Performance optimized"
+      "Performance optimized",
+      "JSON DB"
     ]
   }
 ]

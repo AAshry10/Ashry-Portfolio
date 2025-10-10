@@ -84,6 +84,91 @@
     display: block;
 }
 
+/* Coming Soon Container Styles */
+.coming-soon-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.coming-soon-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.7) blur(1px);
+    transition: filter 0.3s ease;
+}
+
+.coming-soon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    transition: background 0.3s ease;
+}
+
+.coming-soon-content {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    max-width: 400px;
+}
+
+.coming-soon-icon {
+    font-size: 4rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    display: block;
+    animation: pulse 2s infinite;
+}
+
+.coming-soon-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.coming-soon-content p {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Pulse animation for the icon */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Hover effects for coming soon container */
+.coming-soon-container:hover .coming-soon-image {
+    filter: brightness(0.8) blur(0.5px);
+}
+
+.coming-soon-container:hover .coming-soon-overlay {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
 .description-section h3 {
     font-size: 2rem;
     font-weight: 600;
@@ -232,6 +317,23 @@
 
     .tech-tags {
         justify-content: center;
+    }
+
+    .coming-soon-content {
+        padding: 1.5rem;
+    }
+
+    .coming-soon-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .coming-soon-content h3 {
+        font-size: 2rem;
+    }
+
+    .coming-soon-content p {
+        font-size: 1.2rem;
     }
 }
 /*Project Info Styling Ends*/

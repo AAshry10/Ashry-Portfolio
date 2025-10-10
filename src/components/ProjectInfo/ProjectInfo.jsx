@@ -48,14 +48,27 @@ const ProjectInfo = () => {
         <section className="demo-section">
           <h2>Demo Video</h2>
           <div className="video-container">
-            <video 
-              controls 
-              poster={currentProject.image}
-              className="demo-video"
-            >
-              <source src={currentProject.video || currentProject.demoVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {currentProject.video ? (
+              <video 
+                controls 
+                poster={currentProject.image}
+                className="demo-video"
+              >
+                <source src={currentProject.video || currentProject.demoVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <div className="coming-soon-container">
+                <img src={currentProject.image} alt="Project" className="coming-soon-image" />
+                <div className="coming-soon-overlay">
+                  <div className="coming-soon-content">
+                    <i className="fa-solid fa-video coming-soon-icon"></i>
+                    <h3>Demo Video Coming Soon</h3>
+                    <p>Stay tuned for a detailed demonstration</p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 
