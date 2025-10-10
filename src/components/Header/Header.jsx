@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,11 +40,14 @@ const Header = () => {
       </div>
 
       <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
+        <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
+          Home
+        </a>
         <a href="#portfolio" onClick={(e) => { e.preventDefault(); scrollToSection('portfolio'); }}>
           Projects
         </a>
-        <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>
-          About
+        <a href="#Services" onClick={(e) => { e.preventDefault(); scrollToSection('Services'); }}>
+          Services
         </a>
         <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>
           Contact

@@ -5,13 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 // Import components
-import Header from './components/Header';
-import Home from './components/Home';
-import About from './components/Services'; // About component (renamed from Services)
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import ProjectInfo from './components/ProjectInfo';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import About from './components/Services/Services'; // About component (renamed from Services)
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import ProjectInfo from './components/ProjectInfo/ProjectInfo';
 
 // Main Portfolio Page Component
 const MainPage = () => {

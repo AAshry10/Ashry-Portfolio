@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import './ProjectInfo.css';
 
 const ProjectInfo = () => {
   const { projectId } = useParams();
@@ -9,11 +10,10 @@ const ProjectInfo = () => {
   const projectsData = {
     'denimora': {
       title: 'Denimora',
-      description: 'A comprehensive e-commerce platform built for a freelancing client. This project features a modern design, full shopping cart functionality, user authentication, product management, and payment integration. Built with React.js frontend and Django backend with RESTful API architecture.',
+      description: 'A comprehensive e-commerce platform built for a freelancing client. This project features a modern design, full shopping cart functionality, user authentication, product management, and Bosta shipping integration. Built with React.js frontend and Django backend with RESTful API architecture.',
       technologies: ['React.js', 'Django', 'Python', 'RESTful API', 'CSS3', 'JavaScript'],
       demoVideo: '/assets/Videos/Denimora.mp4',
       repoLink: 'https://github.com/AAshry10/denimora',
-      image: '/assets/Images/Denimora.png',
       features: [
         'Full e-commerce functionality',
         'Shopping cart and checkout',

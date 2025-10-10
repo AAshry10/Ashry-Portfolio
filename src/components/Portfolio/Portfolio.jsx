@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, Row, Col, Badge } from 'react-bootstrap';
+import './Portfolio.css';
 
 const Portfolio = () => {
   const navigate = useNavigate();
@@ -43,7 +44,6 @@ const Portfolio = () => {
     <section className="portfolio" id="portfolio">
       <div className="portfolio-header">
         <h2>Latest Projects</h2>
-        <span className="project-count">Showing all projects</span>
       </div>
 
       <Row className="g-4">

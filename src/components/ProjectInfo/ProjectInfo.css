@@ -1,0 +1,237 @@
+/*Project Info Styling Starts*/
+.project-info {
+    background: var(--bg-color);
+    min-height: 100vh;
+    padding: clamp(6rem, 8vw, 8rem) clamp(3%, 5vw, 5%) clamp(3rem, 5vw, 4rem);
+}
+
+.project-info-header {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 0 auto 2rem auto;
+}
+
+.back-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.project-info-header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.project-info-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.demo-section,
+.description-section,
+.technologies-section {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.demo-section h2,
+.description-section h2,
+.technologies-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.project-description-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 1.5rem;
+    color: var(--text-muted);
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tech-tag {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.repo-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.repo-link-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);    
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.repo-link-container a:hover {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background: transparent;
+}
+
+.project-not-found {
+    background: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.project-not-found h2 {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+/*Project Info Responsive Styles*/
+@media (max-width: 768px) {
+    .project-info {
+        padding: 6rem 4% 4rem;
+    }
+
+    .project-info-header h1 {
+        font-size: 3rem;
+    }
+
+    .demo-section,
+    .description-section,
+    .technologies-section,
+    .repo-section {
+        padding: 2rem;
+    }
+
+    .project-info-content {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-info {
+        padding: 6rem 3% 4rem;
+    }
+
+    .project-info-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .demo-section,
+    .description-section,
+    .technologies-section,
+    .repo-section {
+        padding: 1.5rem;
+    }
+
+    .tech-tags {
+        justify-content: center;
+    }
+}
+/*Project Info Styling Ends*/

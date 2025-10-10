@@ -1,0 +1,221 @@
+/*Services Styling Starts*/
+.services{
+    background: var(--bg-color);
+    padding: clamp(4rem, 8vw, 8rem) 0 clamp(2rem, 4vw, 4rem);
+}
+
+.services-container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-header {
+    margin-bottom: clamp(3rem, 5vw, 4rem);
+}
+
+.services-header h2 {
+    font-size: clamp(2.8rem, 4vw, 3.6rem);
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.services-slider {
+    position: relative;
+    width: 100%;
+    height: clamp(250px, 40vw, 500px);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.embla {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.embla__container {
+    display: flex;
+    height: 100%;
+}
+
+.service-slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.service-content {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    padding: 0 clamp(2rem, 4vw, 3rem);
+    z-index: 2;
+}
+
+.service-content h3 {
+    font-size: clamp(2.4rem, 4vw, 3.2rem);
+    font-weight: 700;
+    margin-bottom: clamp(1.5rem, 3vw, 2rem);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.service-content p {
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+    line-height: 1.6;
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.service-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    padding: clamp(1rem, 2vw, 1.2rem) clamp(2rem, 4vw, 2.4rem);
+    font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service-btn:hover {
+    background: white;
+    color: var(--text-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    width: clamp(50px, 8vw, 60px);
+    height: clamp(50px, 8vw, 60px);
+    border-radius: 50%;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+.slider-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: clamp(1rem, 3vw, 2rem);
+}
+
+.next-btn {
+    right: clamp(1rem, 3vw, 2rem);
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: clamp(1rem, 3vw, 2rem);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: clamp(0.8rem, 1.5vw, 1rem);
+    z-index: 3;
+}
+
+.dot {
+    width: clamp(12px, 2vw, 16px);
+    height: clamp(12px, 2vw, 16px);
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+.dot:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+}
+
+/*Services Responsive Styles*/
+@media (max-width: 994px) {
+    .services-slider {
+        height: clamp(350px, 45vw, 500px);
+    }
+    
+    .service-content {
+        padding: 0 clamp(1.5rem, 3vw, 2rem);
+    }
+    
+    .service-content h3 {
+        font-size: clamp(2rem, 3.5vw, 2.8rem);
+    }
+    
+    .service-content p {
+        font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+    }
+    
+    .slider-btn {
+        width: clamp(45px, 7vw, 55px);
+        height: clamp(45px, 7vw, 55px);
+        font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+    }
+    
+    .prev-btn {
+        left: clamp(0.5rem, 2vw, 1rem);
+    }
+    
+    .next-btn {
+        right: clamp(0.5rem, 2vw, 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-slider {
+        height: clamp(300px, 40vw, 400px);
+    }
+
+    .service-content{
+        padding-inline: 6rem;
+    }
+    
+    .service-content h3 {
+        font-size: clamp(1.8rem, 3vw, 2.4rem);
+        margin-bottom: clamp(1rem, 2vw, 1.5rem);
+    }
+    
+    .service-content p {
+        font-size: clamp(1.1rem, 2vw, 1.4rem);
+        margin-bottom: clamp(1.5rem, 3vw, 2rem);
+    }
+    
+    .service-btn {
+        padding: clamp(0.8rem, 1.8vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+        font-size: clamp(1.2rem, 2.2vw, 1.4rem);
+    }
+    
+    .slider-dots {
+        bottom: clamp(0.8rem, 2vw, 1.5rem);
+    }
+}
+/*Services Styling Ends*/

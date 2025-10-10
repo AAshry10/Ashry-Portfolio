@@ -1,0 +1,146 @@
+/*Header Styling Starts*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 5%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar-small {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.logo-text h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.logo-text span {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.navbar a{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-left: 3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none !important;
+}
+
+.navbar a:hover{
+    color: var(--accent-color);
+}
+
+.header-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.header-social a:hover {
+    color: var(--text-color);
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+#menu-icon{
+    font-size: 2.4rem;
+    color: var(--text-color);
+    display: none;
+    cursor: pointer;
+}
+
+/*Header Responsive Styles*/
+@media (max-width: 991px) {
+    .header{
+        padding: 1.5rem 4%;
+    }
+
+    .logo-text h4 {
+        font-size: 1.4rem;
+    }
+
+    .logo-text span {
+        font-size: 1.1rem;
+    }
+
+    .navbar a{
+        margin-left: 2rem;
+        font-size: 1.3rem;
+        text-decoration: none !important;
+    }
+
+    .header-social {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) { 
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 2rem 4%;
+        background: var(--bg-color);
+        border-top: 1px solid var(--border-color);
+        display: none;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 1.6rem;
+        margin: 2rem 0;
+        padding: 1rem 0;
+        text-decoration: none !important;
+    }
+}
+/*Header Styling Ends*/

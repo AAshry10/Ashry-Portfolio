@@ -1,6 +1,44 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import './Home.css';
 
 const Home = () => {
+  const [displayedText, setDisplayedText] = useState('');
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  
+  const texts = ['Software Engineer', 'Frontend Developer'];
+  
+  useEffect(() => {
+    const typeSpeed = 100;
+    const deleteSpeed = 50;
+    const pauseTime = 2000;
+    
+    const currentText = texts[currentTextIndex];
+    
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        // Typing
+        if (displayedText.length < currentText.length) {
+          setDisplayedText(currentText.substring(0, displayedText.length + 1));
+        } else {
+          // Finished typing, pause then start deleting
+          setTimeout(() => setIsDeleting(true), pauseTime);
+        }
+      } else {
+        // Deleting
+        if (displayedText.length > 0) {
+          setDisplayedText(displayedText.substring(0, displayedText.length - 1));
+        } else {
+          // Finished deleting, move to next text
+          setIsDeleting(false);
+          setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        }
+      }
+    }, isDeleting ? deleteSpeed : typeSpeed);
+    
+    return () => clearTimeout(timeout);
+  }, [displayedText, currentTextIndex, isDeleting, texts]);
+
   const handleDownloadCV = () => {
     // Create a link element
     const link = document.createElement('a');
@@ -18,7 +56,7 @@ const Home = () => {
         <div className="availability-badge">Available for hire</div>
         <h1>Hi — I'm Ahmed ELashry. <br />
           <span className="multiple-text">
-            I am a Frontend Developer
+            I am a <span className="typings-highlight">{displayedText}<span className="cursor">|</span></span>
           </span>
         </h1>
         <p>
