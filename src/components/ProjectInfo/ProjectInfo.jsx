@@ -6,7 +6,6 @@ import projectsData from '../../JSON DB/Projects.json';
 const ProjectInfo = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
-  const [projects, setProjects] = useState([]);
   const [currentProject, setCurrentProject] = useState(null);
 
   useEffect(() => {
@@ -17,7 +16,6 @@ const ProjectInfo = () => {
   }, []);
 
   useEffect(() => {
-    setProjects(projectsData);
     const project = projectsData.find(p => p.id === projectId);
     setCurrentProject(project);
   }, [projectId]);

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './Home.css';
 
 const Home = () => {
@@ -6,7 +6,7 @@ const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  const texts = ['Software Engineer', 'Frontend Developer'];
+  const texts = useMemo(() => ['Software Engineer', 'Frontend Developer'], []);
   
   useEffect(() => {
     const typeSpeed = 100;
