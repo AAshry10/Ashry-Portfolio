@@ -95,31 +95,15 @@
     overflow: hidden;
 }
 
-.social-icon::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--accent-color);
-    transform: scale(0);
-    transition: transform 0.3s ease;
-    z-index: 0;
-}
-
 .social-icon i {
     position: relative;
     z-index: 1;
     transition: color 0.3s ease;
 }
 
-.social-icon:hover::before {
-    transform: scale(1);
-}
-
 .social-icon:hover {
     border-color: var(--accent-color);
+    background-color: var(--accent-color);
     color: white;
 }
 

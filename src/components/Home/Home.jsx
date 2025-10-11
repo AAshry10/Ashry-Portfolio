@@ -62,7 +62,7 @@ const Home = () => {
         <p>
           I design and build fast, accessible web interfaces. I specialize in React and 
           Bootstrap. I focus on performance, accessibility and delightful interactions. 
-          Below you'll find selected projects and a short about section.
+          Below you'll find my projects.
         </p>
 
         <div className="hero-buttons">
