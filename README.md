@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+<div id="top">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- HEADER STYLE: CLASSIC -->
+<div align="left">
 
-## Available Scripts
 
-In the project directory, you can run:
+# ASHRY-PORTFOLIO
 
-### `npm start`
+<img src="https://img.shields.io/badge/JSON-ffffff.svg?style=flat&logo=JSON&logoColor=black" alt="JSON">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
+<img src="https://img.shields.io/badge/React%20Bootstrap-41E0FD.svg?style=flat&logo=React-Bootstrap&logoColor=black" alt="React%20Bootstrap">
+<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" alt="React">
+<img src="https://img.shields.io/github/license/AAshry10/Ashry-Portfolio?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+- [Project Structure](#project-structure)
+- [License](#license)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💫Overview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ashry-Portfolio is a modern, React-based personal portfolio template crafted for developers to showcase their projects and skills with style and efficiency. It emphasizes performance, responsiveness, and easy customization, making it ideal for professional online presence.
 
-### `npm run eject`
+**Why Ashry-Portfolio?**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project helps you create a visually engaging and high-performing portfolio website with minimal effort. The core features include:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 🎨 **🧩 Modular Components:** Easily customize sections like Home, About, Portfolio, and Contact to match your personal brand.
+- 🖥️ **🔗 Data-Driven Architecture:** Uses JSON databases for dynamic content management, simplifying updates.
+- 📱 **🌐 Responsive Design:** Ensures your site looks great on all devices with seamless navigation.
+- 🛠️ **📝 Build & Deployment Configs:** Supports smooth deployment workflows with tailored configuration files.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Experience **Ashry-Portfolio** in action right now!  
+[![Live Demo](https://img.shields.io/badge/Click%20Here%20to%20Try-805AD5?style=for-the-badge&logo=google-chrome)](https://ahmedelashry.com)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
 
-### Code Splitting
+This project requires the following dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Node.Js:** V.14 +
+- **Node Package Manager:** Npm
 
-### Analyzing the Bundle Size
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Build Ashry-Portfolio from the source and install dependencies:
 
-### Making a Progressive Web App
+1. **Clone the repository:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```sh
+     git clone https://github.com/AAshry10/Ashry-Portfolio
+    ```
 
-### Advanced Configuration
+2. **Navigate to the project directory:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    ```sh
+     cd Ashry-Portfolio
+    ```
 
-### Deployment
+3. **Install the dependencies:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Using [npm](https://www.npmjs.com/):**
 
-### `npm run build` fails to minify
+```sh
+ npm install
+ npm install embla-carousel-react
+ npm install embla-carousel-autoplay
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Usage
+
+Run the project with:
+
+**Using [npm](https://www.npmjs.com/):**
+
+```sh
+npm start
+```
+
+**Navigate to your [localhost:3000](https://localhost:3000)**
+
+---
+
+## 🏗️Project Structure
+
+```sh
+└── Ashry-Portfolio/
+    ├── README.md
+    ├── netlify.toml
+    ├── package-lock.json
+    ├── package.json
+    └── src
+        ├── App.css
+        ├── App.js
+        ├── JSON DB
+        ├── components
+        ├── index.css
+        ├── index.js
+        └── reportWebVitals.js
+```
+---
+
+## 🧾License
+
+Ashry-portfolio is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+
+---
+
+💖 *Built with love by [Ahmed ELashry](https://github.com/AAshry10)*  
+
+---
