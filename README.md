@@ -118,7 +118,7 @@ npm start
 
 ## 🧾License
 
-Ashry-portfolio is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+Ashry-portfolio is protected under the [MIT License](https://choosealicense.com/licenses). For more details, refer to the [LICENSE](./LICENSE) file.
 
 ---
 
