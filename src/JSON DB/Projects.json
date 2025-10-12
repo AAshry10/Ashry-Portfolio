@@ -30,7 +30,7 @@
     "demoVideo": "/assets/Videos/Denimora.mp4",
     "title": "Denimora",
     "description": "Full E-Commerce Site",
-    "detaileddescription": "A comprehensive e-commerce platform built for a freelancing client. This project features a modern design, full shopping cart functionality, user authentication, product management, and Bosta shipping integration. Built with React.js frontend and Django backend with RESTful API architecture.",
+    "detaileddescription": "A comprehensive e-commerce platform built for a freelancing client. This project features a modern design, full shopping cart functionality, product management, and Bosta shipping integration. Built with React.js frontend and Django backend with RESTful API architecture.",
     "technologies": "React.Js • django • RESTful",
     "year": "2025",
     "technologiesArray": ["React.js", "Django", "Python", "RESTful API", "CSS3", "JavaScript"],

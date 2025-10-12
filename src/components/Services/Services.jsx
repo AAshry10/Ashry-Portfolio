@@ -27,7 +27,7 @@ const Services = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
     loop: true,
     align: 'center'
-  }, [Autoplay({ delay: 5000, stopOnInteraction: false })]);
+  }, [Autoplay({ delay: 10000, stopOnInteraction: false })]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();

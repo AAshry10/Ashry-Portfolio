@@ -53,7 +53,7 @@ const Home = () => {
   return (
     <section className="home" id="home">
       <div className="home-content">
-        <div className="availability-badge">Available for hire</div>
+        <div className="availability-badge">Open to work</div>
         <h1>Hi — I'm Ahmed ELashry. <br />
           <span className="multiple-text">
             I am a <span className="typings-highlight">{displayedText}<span className="cursor">|</span></span>
