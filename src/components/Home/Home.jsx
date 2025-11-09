@@ -6,7 +6,7 @@ const Home = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  const texts = useMemo(() => ['Software Engineer', 'Frontend Developer'], []);
+  const texts = useMemo(() => ['Software Engineer', 'Frontend Developer', 'Shopify Developer'], []);
   
   useEffect(() => {
     const typeSpeed = 100;
