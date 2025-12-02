@@ -43,7 +43,7 @@ const Home = () => {
     // Create a link element
     const link = document.createElement('a');
     // Set the file path - update this path to your actual CV file
-    link.href = '/assets/Ashry-CV.pdf'; // Change this to your actual CV file
+    link.href = '/assets/AshryCV(1).pdf'; // Change this to your actual CV file
     link.download = 'Ashry-CV.pdf'; // The name for the downloaded file
     document.body.appendChild(link);
     link.click();
