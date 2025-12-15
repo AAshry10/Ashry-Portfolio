@@ -32,39 +32,40 @@ const ProjectInfo = () => {
   }
 
   let videoContent = (
-    <video 
-                controls 
-                poster={currentProject.image}
-                className="demo-video"
-              >
-                <source src={currentProject.video || currentProject.demoVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+    <video controls poster={currentProject.image} className="demo-video">
+      <source
+        src={currentProject.video || currentProject.demoVideo}
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
   );
-  if(currentProject.id === 'web-portfolio') {
+  if (currentProject.id === "web-portfolio") {
     videoContent = (
       <div className="coming-soon-container">
-                <img src={currentProject.image} alt="Project" className="coming-soon-image" />
-                <div className="coming-soon-overlay">
-                  <div className="coming-soon-content">
-                    <i className="fa-solid fa-video coming-soon-icon"></i>
-                    <h3>This Portfolio</h3>
-                    <p>You are already here !!!</p>
-                  </div>
-                </div>
-              </div>
+        <img
+          src={currentProject.image}
+          alt="Project"
+          className="coming-soon-image"
+        />
+        <div className="coming-soon-overlay">
+          <div className="coming-soon-content">
+            <i className="fa-solid fa-video coming-soon-icon"></i>
+            <h3>This Portfolio</h3>
+            <p>You are already here !!!</p>
+          </div>
+        </div>
+      </div>
     );
-  }
-  else if(!currentProject.demoVideo) {
+  } else if (!currentProject.demoVideo) {
     videoContent = (
-      <video 
-                controls 
-                poster={currentProject.image}
-                className="demo-video"
-              >
-                <source src={currentProject.video || currentProject.demoVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+      <video controls poster={currentProject.image} className="demo-video">
+        <source
+          src={currentProject.video || currentProject.demoVideo}
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
     );
   }
 
