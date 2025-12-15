@@ -8,7 +8,7 @@
     "year": "2024 - 2025",
     "detaileddescription": "A graduation project developed for CIS Mansoura University. This comprehensive web application features advanced functionality built with modern technologies. The project demonstrates full-stack development skills with React.js frontend, Django backend for community space and user authentication, and Node.js services for the toolkit.",
     "technologiesArray": ["React.js","Next.js", "Typescript", "Tailwind", "Django", "Node.js", "RESTful API", "Python"],
-    "demoVideo": "/assets/Videos/cymate-demo.mp4",
+    "demoVideo": "/assets/Videos/CyMate-Demo-Video.mp4",
     "repoLink": "https://github.com/AAshry10/Cymate-Frontend",
     "features": [
       "Cybersecurity Toolkit",
@@ -27,7 +27,7 @@
   {
     "id": "denimora",
     "image": "/assets/Images/Projects/Denimora-Landing.png",
-    "demoVideo": "/assets/Videos/Denimora.mp4",
+    "demoVideo": "/assets/Videos/Denimora-Demo-Video.mp4",
     "title": "Denimora",
     "description": "Full E-Commerce Site",
     "detaileddescription": "A comprehensive e-commerce platform built for a freelancing client. This project features a modern design, full shopping cart functionality, product management, and Bosta shipping integration. Built with React.js frontend and Django backend with RESTful API architecture.",
@@ -47,7 +47,7 @@
   {
     "id": "web-portfolio",
     "image": "/assets/Images/Projects/Ashry-Portfolio.png",
-    "demoVideo": "/assets/Videos/portfolio-demo.mp4",
+    "demoVideo": "",
     "title": "Web Portfolio",
     "description": "This portfolio",
     "technologies": "React.Js • Bootstrap • JSON",
