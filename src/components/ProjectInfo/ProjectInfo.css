@@ -69,6 +69,14 @@
     margin-bottom: 1.5rem;
 }
 
+.project-notes {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var(--text-accent);
+    margin-top: 1rem;
+    font-style: italic;
+}
+
 .video-container {
     width: 100%;
     max-width: 800px;

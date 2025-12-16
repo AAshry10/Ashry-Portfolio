@@ -93,7 +93,7 @@ const ProjectInfo = () => {
         <section className="description-section">
           <h2>Project Description</h2>
           <p className="project-description-text">{currentProject.detaileddescription || currentProject.description}</p>
-          
+          {currentProject.notes && <p className="project-notes">{currentProject.notes}</p>}
           <h3>Key Features</h3>
           <ul className="features-list">
             {currentProject.features.map((feature, index) => (
