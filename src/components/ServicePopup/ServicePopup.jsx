@@ -92,7 +92,7 @@ const ServicePopup = ({ service, isOpen, onClose }) => {
           className="service-popup-btn"
           onClick={() => {
             const message = `Hi! I'm interested in your ${service.title} service. Could you please provide more details?`;
-            const whatsappUrl = `https://wa.me/201140241672?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/+96565986338?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
             onClose();
           }}
