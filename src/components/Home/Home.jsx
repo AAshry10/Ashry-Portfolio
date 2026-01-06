@@ -80,7 +80,7 @@ const Home = () => {
           <a href="https://www.instagram.com/a.ashry.615/" target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a href='https://wa.me/+201140241672' target="_blank" rel="noopener noreferrer">
+          <a href='https://wa.me/+96565986338' target="_blank" rel="noopener noreferrer">
             <i className="fa-brands fa-whatsapp"></i>
           </a>
         </div>
