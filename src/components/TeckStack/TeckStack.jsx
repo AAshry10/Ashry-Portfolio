@@ -52,7 +52,7 @@ const TeckStack = () => {
         <div className="techstack-header">
           <h2>Tech Stack</h2>
           <p>
-            A quick snapshot of the technologies I use most often{totalCount ? ` (${totalCount}+).` : '.'}
+            A quick snapshot of the technologies I use most often{totalCount ? ` (${totalCount}).` : '.'}
           </p>
         </div>
 
@@ -65,9 +65,21 @@ const TeckStack = () => {
               </div>
 
               <div className="techstack-items">
-                {group.items.map((item) => (
-                  <span key={`${group.category}-${item.name}`} className="techstack-pill">
-                    {item.icon ? <i className={item.icon} aria-hidden="true"></i> : null}
+                 {group.items.map((item) => (
+                   <span key={`${group.category}-${item.name}`} className="techstack-pill">
+                     {item.icon ? (
+                       item.icon.startsWith('/') || item.icon.endsWith('.svg') || item.icon.endsWith('.png') ? (
+                         <img
+                           src={item.icon}
+                           alt=""
+                           aria-hidden="true"
+                           className="techstack-icon-img"
+                           loading="lazy"
+                         />
+                       ) : (
+                         <i className={item.icon} aria-hidden="true"></i>
+                       )
+                     ) : null}
                     <span className="techstack-pill-name">{item.name}</span>
                     {item.level ? <span className="techstack-pill-level">{item.level}</span> : null}
                   </span>

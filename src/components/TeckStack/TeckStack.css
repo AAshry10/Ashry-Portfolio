@@ -106,6 +106,13 @@
   font-size: 1.4rem;
 }
 
+.techstack-icon-img {
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-block;
+  object-fit: contain;
+}
+
 .techstack-pill-name {
   font-weight: 600;
 }
