@@ -14,14 +14,6 @@
     ]
   },
   {
-    "category": "E-Commerce",
-    "items": [
-      { "name": "Shopify", "icon": "fa-brands fa-shopify" },
-      { "name": "Theme Customization", "icon": "fa-solid fa-palette" },
-      { "name": "Apps Integration", "icon": "fa-solid fa-plug" }
-    ]
-  },
-  {
     "category": "Version Control",
     "items": [
       { "name": "Git", "icon": "fa-brands fa-git-alt" },
