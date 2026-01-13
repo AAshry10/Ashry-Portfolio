@@ -40,6 +40,42 @@ const ProjectInfo = () => {
       Your browser does not support the video tag.
     </video>
   );
+  if (currentProject.demoVideo === "HaveLiveDemo") {
+    videoContent = (
+      <div className="coming-soon-container">
+        <img
+          src={currentProject.image}
+          alt="Project"
+          className="coming-soon-image"
+        />
+        <div className="coming-soon-overlay">
+          <div className="coming-soon-content">
+            <i className="fa-solid fa-video coming-soon-icon"></i>
+            <h3>Live Preview</h3>
+            <p><a href={currentProject.LiveLink}>Click here to view the live preview</a></p>
+          </div>
+        </div>
+      </div>
+    )
+  } else if (currentProject.demoVideo === "CommingSoon") {
+    videoContent = (
+      <div className="coming-soon-container">
+        <img
+          src={currentProject.image}
+          alt="Project"
+          className="coming-soon-image"
+        />
+        <div className="coming-soon-overlay">
+          <div className="coming-soon-content">
+            <i className="fa-solid fa-video coming-soon-icon"></i>
+            <h3>Coming Soon</h3>
+            <p>Stay tuned for the demo video</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+  
   if (currentProject.id === "web-portfolio") {
     videoContent = (
       <div className="coming-soon-container">
@@ -83,7 +119,6 @@ const ProjectInfo = () => {
       <div className="project-info-content">
         {/* Demo Video Section */}
         <section className="demo-section">
-          <h2>Demo Video</h2>
           <div className="video-container">
             {videoContent}
           </div>

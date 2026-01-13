@@ -64,5 +64,89 @@
       "Performance optimized",
       "JSON DB"
     ]
+  },
+  {
+    "id": "Investment-Calculator",
+    "image": "/assets/Images/Projects/Investment-Calculator.png",
+    "demoVideo": "HaveLiveDemo",
+    "LiveLink": "https://investment-calculator-one-weld.vercel.app/",
+    "title": "Investment Calculator",
+    "description": "Practice Project",
+    "technologies": "React.Js • Vite",
+    "year": "2026",
+    "detaileddescription": "A small React practice project (Udemy “React”) that calculates and displays yearly investment growth based on user inputs.",
+    "technologiesArray": ["React.js", "Vite", "JavaScript"],
+    "repoLink": "https://github.com/AAshry10/Investment-Calculator.git",
+    "features": [
+      "Live calculations as you change inputs",
+      "Year-by-year results table",
+      "Clean component structure (Header / Inputs / Results)",
+      "Simple and intuitive UI"
+    ]
+  },
+  {
+    "id": "Project-Management-App",
+    "image": "/assets/Images/Projects/Project-Managment.png",
+    "demoVideo": "HaveLiveDemo",
+    "LiveLink": "https://project-management-app-two-khaki.vercel.app/",
+    "title": "Project Management App",
+    "description": "Practice Project",
+    "technologies": "React.Js • Vite",
+    "year": "2026",
+    "detaileddescription": "A small React practice project (Udemy “React Course”) to create projects, view details, and manage tasks per project.",
+    "technologiesArray": ["React.js", "Vite", "JavaScript", "Tailwind"],
+    "repoLink": "https://github.com/AAshry10/Project-Management-App",
+    "features": [
+      "Create projects with title, description, and due date",
+      "Project sidebar to list and select projects",
+      "Project details view with formatted due date + description",
+      "Delete projects from the details view",
+      "Task management per project (add tasks + clear tasks)",
+      "Input validation modal for empty fields (React Portal via #modal-root)",
+      "Clean component structure (ProjectSideBar, NewProject, SelectedProject, Tasks, Modal)"
+    ]
+  },
+  {
+    "id": "Quiz-App",
+    "image": "/assets/Images/Projects/Quiz.png",
+    "demoVideo": "HaveLiveDemo",
+    "LiveLink": "https://quiz-app-gamma-roan.vercel.app/",
+    "title": "Quiz App",
+    "description": "Practice Project",
+    "technologies": "React.Js • Vite",
+    "year": "2026",
+    "detaileddescription": "A small React practice project (Udemy “React Course”) to take a timed quiz, select answers, skip questions automatically on timeout, and see a final summary with a per-question review.",
+    "technologiesArray": ["React.js", "Vite", "JavaScript", "CSS"],
+    "repoLink": "https://github.com/AAshry10/Quiz-App",
+    "features": [
+      "Timed questions with a progress bar",
+      "Auto-skip on timeout (records null as skipped)",
+      "Answer feedback states (selected → correct / wrong)",
+      "Final results screen with total score and percentage",
+      "Per-question review with correct answer feedback"
+    ]
+  },
+  {
+    "id": "Food-Order-App",
+    "image": "/assets/Images/Projects/Food-Order.png",
+    "demoVideo": "CommingSoon",
+    "LiveLink": "",
+    "title": "Food Ordering App",
+    "description": "Practice Project",
+    "technologies": "React.Js • Vite • Express",
+    "year": "2026",
+    "detaileddescription": "A React practice project (Udemy “React Course”) to browse meals, add/remove items from a cart, and place an order via a simple backend API. Includes a checkout modal and order confirmation state.",
+    "technologiesArray": ["React.js", "Vite", "JavaScript", "CSS", "Node.js", "Express"],
+    "repoLink": "https://github.com/AAshry10/Food-Order-App",
+    "features": [
+      "Meal list loaded from backend (GET /meals)",
+      "Cart management (add, remove, clear) using Context + Reducer",
+      "Cart & Checkout shown as modals with UI state managed via context",
+      "Checkout form that submits orders to backend (POST /orders)",
+      "Basic HTTP handling with a reusable useHttp hook",
+      "Order confirmation state",
+      "Loading Stats",
+      "Error Handling"
+    ]
   }
 ]
