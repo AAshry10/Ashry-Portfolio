@@ -1,0 +1,43 @@
+[
+  {
+    "category": "Frontend",
+    "items": [
+      { "name": "React.js", "icon": "fa-brands fa-react", "level": "Advanced" },
+      { "name": "Next.js", "icon": "fa-solid fa-layer-group", "level": "Intermediate" },
+      { "name": "JavaScript", "icon": "fa-brands fa-js", "level": "Advanced" },
+      { "name": "TypeScript", "icon": "fa-solid fa-code", "level": "Intermediate" },
+      { "name": "HTML5", "icon": "fa-brands fa-html5", "level": "Advanced" },
+      { "name": "CSS3", "icon": "fa-brands fa-css3-alt", "level": "Advanced" },
+      { "name": "Bootstrap", "icon": "fa-brands fa-bootstrap", "level": "Intermediate" },
+      { "name": "Tailwind CSS", "icon": "fa-solid fa-wand-magic-sparkles", "level": "Intermediate" },
+      { "name": "Framer Motion", "icon": "fa-solid fa-frames", "level": "Intermediate" }
+    ]
+  },
+  {
+    "category": "E-Commerce",
+    "items": [
+      { "name": "Shopify", "icon": "fa-brands fa-shopify", "level": "Intermediate" },
+      { "name": "Theme Customization", "icon": "fa-solid fa-palette", "level": "Intermediate" },
+      { "name": "Apps Integration", "icon": "fa-solid fa-plug", "level": "Intermediate" }
+    ]
+  },
+  {
+    "category": "Version Control",
+    "items": [
+      { "name": "Git", "icon": "fa-brands fa-git-alt", "level": "Intermediate" },
+      { "name": "GitHub", "icon": "fa-brands fa-github", "level": "Intermediate" }
+    ]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
