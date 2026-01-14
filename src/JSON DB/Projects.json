@@ -148,5 +148,24 @@
       "Loading Stats",
       "Error Handling"
     ]
+  },
+  {
+    "id": "Foodies-App",
+    "image": "/assets/Images/Projects/Foodies-App.png",
+    "demoVideo": "CommingSoon",
+    "LiveLink": "",
+    "title": "Foodies App",
+    "description": "Next.JS Practice Project",
+    "technologies": "React.Js • Next.js",
+    "year": "2026",
+    "detaileddescription": "A Next.js practice project (Udemy “Next.js / React Course”) to browse meals and view meal details. Includes a “Share Meal” form (server action) to submit new meals.",
+    "technologiesArray": ["React.js", "Next.js", "JavaScript", "CSS", "SQLite"],
+    "repoLink": "https://github.com/AAshry10/Foodies-App",
+    "features": [
+      "Meals list page (/meals)",
+      "Meal details page (/meals/[slug])",
+      "Share meal page (/meals/share)",
+      "Route-level UI states: loading UI, error UI, not-found UI"
+    ]
   }
 ]
