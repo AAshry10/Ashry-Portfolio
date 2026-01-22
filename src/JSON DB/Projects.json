@@ -167,5 +167,26 @@
       "Share meal page (/meals/share)",
       "Route-level UI states: loading UI, error UI, not-found UI"
     ]
+  },
+  {
+    "id": "Ramadan Planner",
+    "image": "/assets/Images/Projects/RamadanPlanner.png",
+    "demoVideo": "HaveLiveDemo",
+    "LiveLink": "https://ramadan26planner.com",
+    "title": "Ramadan Planner",
+    "description": "Islamic Ramadan App",
+    "technologies": "React.Js • Vite",
+    "year": "2026",
+    "detaileddescription": "A modern Ramadan Planner 2026 built with React to help you track your worship and daily plans across the 30 days of Ramadan. Includes a 30-day calendar, daily tracker, Qur’an Juz’ progress (with completion modal), prayer table, adhkar library, and an Eid preparation checklist .",
+    "technologiesArray": ["React.js", "Vite", "JavaScript", "JSON", "Redux-Toolkit", "React Router", "CSS Modules"],
+    "repoLink": "https://github.com/AAshry10/Ramadan-Planner-2026",
+    "features": [
+      "Ramadan Calendar (30-day grid)",
+      "Daily Tracker (per day)",
+      "Quran Tracker",
+      "Prayer Tracker",
+      "Adhkar Library",
+      "Eid Preparation Checklist"
+    ]
   }
 ]
