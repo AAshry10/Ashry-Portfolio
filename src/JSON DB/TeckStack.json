@@ -1,6 +1,6 @@
 [
   {
-    "category": "Frontend Core",
+    "category": "Frontend",
     "items": [
       { "name": "HTML5", "icon": "fa-brands fa-html5" },
       { "name": "CSS3", "icon": "fa-brands fa-css3-alt" },
