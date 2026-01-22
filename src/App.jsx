@@ -7,7 +7,7 @@ import './App.css';
 // Import components
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import About from './components/Services/Services'; // About component (renamed from Services)
+import Services from './components/Services/Services'; // About component (renamed from Services)
 import Portfolio from './components/Portfolio/Portfolio';
 import TeckStack from './components/TeckStack/TeckStack';
 import Contact from './components/Contact/Contact';
@@ -35,8 +35,8 @@ const MainPage = () => {
       <Header />
       <Home />
       <TeckStack />
+      <Services />
       <Portfolio />
-      <About />
       <Contact />
       <Footer />
     </>

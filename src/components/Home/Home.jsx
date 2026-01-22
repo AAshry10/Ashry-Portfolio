@@ -5,16 +5,16 @@ const Home = () => {
   const [displayedText, setDisplayedText] = useState('');
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  
+
   const texts = useMemo(() => ['Software Engineer', 'Frontend Developer', 'Shopify Developer'], []);
-  
+
   useEffect(() => {
     const typeSpeed = 100;
     const deleteSpeed = 50;
     const pauseTime = 2000;
-    
+
     const currentText = texts[currentTextIndex];
-    
+
     const timeout = setTimeout(() => {
       if (!isDeleting) {
         // Typing
@@ -35,7 +35,7 @@ const Home = () => {
         }
       }
     }, isDeleting ? deleteSpeed : typeSpeed);
-    
+
     return () => clearTimeout(timeout);
   }, [displayedText, currentTextIndex, isDeleting, texts]);
 
@@ -60,9 +60,10 @@ const Home = () => {
           </span>
         </h1>
         <p>
-          I design and build fast, accessible web interfaces. I specialize in React and 
-          Bootstrap. I focus on performance, accessibility and delightful interactions. 
-          Below you'll find my projects.
+          Creative and detail-oriented Front-End Developer with strong skills in
+          React, JavaScript, HTML5,  CSS3 and more. Experienced in converting
+          UI/UX designs to responsive, user-friendly interfaces and delivering
+          seamless user experiences across web applications.
         </p>
 
         <div className="hero-buttons">

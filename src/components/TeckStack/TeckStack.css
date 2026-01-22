@@ -1,18 +1,19 @@
 /* Tech Stack Styling Starts */
 .techstack {
   background: var(--bg-color);
-  padding: clamp(4rem, 8vw, 8rem) 0 clamp(2rem, 4vw, 4rem);
+  /* Reduced top padding to tighten spacing from Home section */
+  padding: clamp(2.2rem, 4.5vw, 4.8rem) 0 clamp(2rem, 4vw, 4rem);
 }
 
 .techstack-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 clamp(3%, 5vw, 5%);
 }
 
 .techstack-header {
   text-align: center;
-  margin-bottom: clamp(2.5rem, 4vw, 4rem);
+  margin-bottom: clamp(1rem, 1vw, 1rem);
 }
 
 .techstack-header h2 {
@@ -30,98 +31,75 @@
   line-height: 1.6;
 }
 
-.techstack-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: clamp(1.2rem, 2.5vw, 2rem);
-  /* align-items: start; */
-}
-
-.techstack-card {
-  grid-column: span 6;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: clamp(1.6rem, 2.8vw, 2.2rem);
-  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-  /* height: fit-content;
-  align-self: start; */
-}
-
-.techstack-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent-color);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
-}
-
-.techstack-card-header {
+.techstack-groups {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 1.2rem;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1vw, 1rem);
 }
 
-.techstack-card-header h3 {
-  font-size: clamp(1.7rem, 2.2vw, 2rem);
-  font-weight: 700;
+.techstack-group-header {
+  text-align: center;
+  margin-bottom: clamp(1.3rem, 2.4vw, 2rem);
+}
+
+.techstack-group-title {
+  font-size: clamp(1.9rem, 2.6vw, 2.3rem);
+  font-weight: 800;
   color: var(--text-color);
   margin: 0;
   letter-spacing: -0.01em;
 }
 
-.techstack-count {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 34px;
-  height: 28px;
-  padding: 0 10px;
-  border-radius: 999px;
-  background: rgba(128, 90, 213, 0.18);
-  border: 1px solid rgba(128, 90, 213, 0.35);
-  color: var(--text-color);
-  font-size: 1.2rem;
-  font-weight: 700;
+.techstack-items-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1.2rem, 2.2vw, 2rem);
 }
 
-.techstack-items {
-  display: flex;
-  flex-wrap: wrap;
+.techstack-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: clamp(1.4rem, 2.2vw, 1.8rem);
+  min-height: clamp(92px, 12vw, 120px);
+  display: grid;
+  place-items: center;
+  text-align: center;
   gap: 0.9rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-.techstack-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 0.9rem 1.1rem;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: var(--text-color);
-  font-size: 1.3rem;
-  line-height: 1;
+.techstack-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
 }
 
-.techstack-pill i {
+.techstack-item i {
   color: var(--accent-color);
-  font-size: 1.4rem;
+  font-size: clamp(2.4rem, 3.4vw, 3.2rem);
 }
 
 .techstack-icon-img {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: clamp(2.6rem, 3.4vw, 3.2rem);
+  height: clamp(2.6rem, 3.4vw, 3.2rem);
   display: inline-block;
   object-fit: contain;
 }
 
-.techstack-pill-name {
-  font-weight: 600;
+.techstack-item-text {
+  display: grid;
+  gap: 0.25rem;
 }
 
-.techstack-pill-level {
-  margin-left: 0.2rem;
+.techstack-item-name {
+  font-weight: 700;
+  color: var(--text-color);
+  font-size: clamp(1.25rem, 1.8vw, 1.4rem);
+  line-height: 1.2;
+}
+
+.techstack-item-level {
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-muted);
@@ -129,8 +107,8 @@
 
 /* Tech Stack Responsive Styles */
 @media (max-width: 994px) {
-  .techstack-card {
-    grid-column: span 12;
+  .techstack-items-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -139,19 +117,14 @@
     padding: 0 clamp(2%, 4vw, 4%);
   }
 
-  .techstack-pill {
-    width: 100%;
-    justify-content: center;
-    gap: 0.6rem;
-    text-align: center;
+  .techstack-items-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .techstack-pill i {
-    margin-right: 0;
-  }
-
-  .techstack-pill-level {
-    margin-left: 0.25rem;
+@media (max-width: 360px) {
+  .techstack-items-grid {
+    grid-template-columns: 1fr;
   }
 }
 /* Tech Stack Styling Ends */

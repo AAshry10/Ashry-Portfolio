@@ -1,23 +1,26 @@
 [
   {
-    "category": "Frontend",
+    "category": "Frontend Core",
     "items": [
-      { "name": "React.js", "icon": "fa-brands fa-react" },
-      { "name": "Next.js", "icon": "fa-solid fa-layer-group" },
-      { "name": "JavaScript", "icon": "fa-brands fa-js" },
-      { "name": "TypeScript", "icon": "fa-solid fa-code" },
       { "name": "HTML5", "icon": "fa-brands fa-html5" },
       { "name": "CSS3", "icon": "fa-brands fa-css3-alt" },
+      { "name": "JavaScript", "icon": "fa-brands fa-js" },
+      { "name": "React.js", "icon": "fa-brands fa-react" },
+      { "name": "Next.js", "icon": "/assets/Images/Icons/nextjs.svg" },
+      { "name": "TypeScript", "icon": "/assets/Images/Icons/typescript.svg" },
+      { "name": "Redux-Toolkit", "icon": "/assets/Images/Icons/redux.svg"},
       { "name": "Bootstrap", "icon": "fa-brands fa-bootstrap" },
-      { "name": "Tailwind CSS", "icon": "fa-solid fa-wand-magic-sparkles" },
+      { "name": "Tailwind CSS", "icon": "/assets/Images/Icons/tailwindcss.svg" },
       { "name": "Framer Motion", "icon": "/assets/Images/Icons/framermotion.svg" }
     ]
   },
   {
-    "category": "Version Control",
+    "category": "Technologies & Tools",
     "items": [
       { "name": "Git", "icon": "fa-brands fa-git-alt" },
-      { "name": "GitHub", "icon": "fa-brands fa-github" }
+      { "name": "GitHub", "icon": "fa-brands fa-github" },
+      { "name": "NPM", "icon": "fa-brands fa-npm"},
+      { "name" : "Vercel", "icon": "/assets/Images/Icons/vercel.svg"}
     ]
   }
 ]

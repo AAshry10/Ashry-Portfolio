@@ -49,6 +49,7 @@ const TeckStack = () => {
   return (
     <section className="techstack" id="TeckStack">
       <div className="techstack-container">
+
         <div className="techstack-header">
           <h2>Tech Stack</h2>
           <p>
@@ -56,38 +57,41 @@ const TeckStack = () => {
           </p>
         </div>
 
-        <div className="techstack-grid" role="list">
+        <div className="techstack-groups">
           {groups.map((group) => (
-            <article key={group.category} className="techstack-card" role="listitem">
-              <div className="techstack-card-header">
-                <h3>{group.category}</h3>
-                <span className="techstack-count">{group.items.length}</span>
+            <section key={group.category} className="techstack-group" aria-label={group.category}>
+              <div className="techstack-group-header">
+                <h3 className="techstack-group-title">{group.category}</h3>
               </div>
 
-              <div className="techstack-items">
-                 {group.items.map((item) => (
-                   <span key={`${group.category}-${item.name}`} className="techstack-pill">
-                     {item.icon ? (
-                       item.icon.startsWith('/') || item.icon.endsWith('.svg') || item.icon.endsWith('.png') ? (
-                         <img
-                           src={item.icon}
-                           alt=""
-                           aria-hidden="true"
-                           className="techstack-icon-img"
-                           loading="lazy"
-                         />
-                       ) : (
-                         <i className={item.icon} aria-hidden="true"></i>
-                       )
-                     ) : null}
-                    <span className="techstack-pill-name">{item.name}</span>
-                    {item.level ? <span className="techstack-pill-level">{item.level}</span> : null}
-                  </span>
+              <div className="techstack-items-grid" role="list">
+                {group.items.map((item) => (
+                  <article key={`${group.category}-${item.name}`} className="techstack-item" role="listitem">
+                    {item.icon ? (
+                      item.icon.startsWith('/') || item.icon.endsWith('.svg') || item.icon.endsWith('.png') ? (
+                        <img
+                          src={item.icon}
+                          alt=""
+                          aria-hidden="true"
+                          className="techstack-icon-img"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <i className={item.icon} aria-hidden="true"></i>
+                      )
+                    ) : null}
+
+                    <div className="techstack-item-text">
+                      <span className="techstack-item-name">{item.name}</span>
+                      {item.level ? <span className="techstack-item-level">{item.level}</span> : null}
+                    </div>
+                  </article>
                 ))}
               </div>
-            </article>
+            </section>
           ))}
         </div>
+
       </div>
     </section>
   );

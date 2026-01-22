@@ -46,11 +46,11 @@ const Header = () => {
         <a href="#TeckStack" onClick={(e) => { e.preventDefault(); scrollToSection('TeckStack'); }}>
           Tech Stack
         </a>
-        <a href="#portfolio" onClick={(e) => { e.preventDefault(); scrollToSection('portfolio'); }}>
-          Projects
-        </a>
         <a href="#Services" onClick={(e) => { e.preventDefault(); scrollToSection('Services'); }}>
           Services
+        </a>
+        <a href="#portfolio" onClick={(e) => { e.preventDefault(); scrollToSection('portfolio'); }}>
+          Projects
         </a>
         <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>
           Contact
