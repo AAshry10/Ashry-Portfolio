@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "courses" : [
+            {
+                "courseName": "Front-End Development",
+                "institution": "CCIC-Consulting Of Computer & Information Center",
+                "duration": "Jul 2023 - Sep 2023"  
+            },
+            {
+                "courseName": "Front-End Development",
+                "institution": "ITI - Information Technology Institute",
+                "duration": "Jul 2024- Sep 2023"
+            },
+            {
+                "courseName": "Front-End Development - ReactJs",
+                "institution": "Udemy - React The Complete Guide",
+                "duration": "Oct 2025 - Jan 2026"
+            }
+        ] 
+    },
+    {
+        "id": 2,
+        "positions": [
+            {
+                "title": "Odoo Customer Support Engineer",
+                "company": "One Iteration",
+                "CompanyWebsiteURL": "https://www.one-iteration.com",
+                "duration": "FEB 2026 - Present",
+                "emplymentType": "Internship"
+            }
+        ]
+    }
+]

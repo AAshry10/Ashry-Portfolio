@@ -57,6 +57,28 @@
     background: var(--success-color);
 }
 
+.current-position-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8;
+    background-color: var(--success-color);
+    padding: 0.8rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.current-position-badge a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all .1s ease-in-out;
+}
+
+.current-position-badge a:hover {
+    color: var(--accent-color);
+}
+
 .home-content h1{
     font-size: clamp(3rem, 4vw, 4rem);
     font-weight: 700;
