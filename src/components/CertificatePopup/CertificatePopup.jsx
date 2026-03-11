@@ -13,7 +13,11 @@ const CertificatePopup = ({ certificate, isOpen, onClose }) => {
   return (
     <div className="certificate-popup-overlay" onClick={handleOverlayClick}>
       <div className="certificate-popup-container">
-        
+        {/* Close Button */}
+        <button className="certificate-popup-close" onClick={onClose}>
+          <i className="fa-solid fa-times"></i>
+        </button>
+
         {/* Certificate Image */}
         <div className="certificate-popup-content">
           <img
