@@ -3,19 +3,22 @@
         "id": 1,
         "courses" : [
             {
-                "courseName": "Front-End Development",
-                "institution": "CCIC-Consulting Of Computer & Information Center",
-                "duration": "Jul 2023 - Sep 2023"  
+                "courseName": "React - The Complete Guide - 2025",
+                "institution": "Udemy - React The Complete Guide",
+                "duration": "Oct 2025 - Jan 2026",
+                "certificateImage" : "/assets/Images/Certificates/Udemy ReactJS Certificate.jpg"
             },
             {
                 "courseName": "Front-End Development",
                 "institution": "ITI - Information Technology Institute",
-                "duration": "Jul 2024- Sep 2023"
+                "duration": "Jul 2024- Sep 2023",
+                "certificateImage" : "/assets/Images/Certificates/ITI Certificate.jpg"
             },
             {
-                "courseName": "Front-End Development - ReactJs",
-                "institution": "Udemy - React The Complete Guide",
-                "duration": "Oct 2025 - Jan 2026"
+                "courseName": "Front-End Development",
+                "institution": "CCIC - Consulting Of Computer & Information Center",
+                "duration": "Jul 2023 - Sep 2023",
+                "certificateImage" : "/assets/Images/Certificates/CCIC Certificate.jpg"  
             }
         ] 
     },
@@ -28,6 +31,17 @@
                 "CompanyWebsiteURL": "https://www.one-iteration.com",
                 "duration": "FEB 2026 - Present",
                 "emplymentType": "Internship"
+            }
+        ]
+    },
+    {
+        "id" : 3,
+        "Education" : [
+            {
+                "degree": "Bachelor's Degree in Computer Science",
+                "university": "Faculty of Computers and Information Sciences, Mansoura University",
+                "duration": "2021 - 2025",
+                "certificateImage" : "/assets/Images/Certificates/Grad Certificate.jpg"
             }
         ]
     }

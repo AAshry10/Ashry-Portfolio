@@ -43,6 +43,9 @@ const Header = () => {
         <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
           Home
         </a>
+        <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }}>
+          Experience
+        </a>
         <a href="#TeckStack" onClick={(e) => { e.preventDefault(); scrollToSection('TeckStack'); }}>
           Tech Stack
         </a>

@@ -1,0 +1,299 @@
+/* Experience Section Styling Starts */
+.experience {
+    background: var(--bg-color);
+    padding: clamp(4rem, 6vw, 6rem) clamp(3%, 4vw, 4%) clamp(2rem, 3vw, 3rem);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.experience-header h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.experience-container {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Experience Category Styling */
+.experience-category {
+    background: transparent;
+    border-left: 4px solid var(--main-color);
+    padding-left: 2rem;
+}
+
+.category-title {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.experience-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Individual Experience Item */
+.experience-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1rem;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--main-color), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.experience-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--main-color);
+    transform: translateX(8px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item:hover::before {
+    opacity: 1;
+}
+
+.item-title {
+    font-size: clamp(1.4rem, 2.8vw, 2.4rem);
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 0 0.5rem 0;
+    line-height: 1.3;
+    flex-basis: 100%;
+}
+
+.item-company {
+    font-size: clamp(1.1rem, 2.3vw, 1.6rem);
+    color: var(--main-color);
+    margin: 0.3rem 0;
+    font-weight: 600;
+    /* flex-basis: 100%; */
+}
+
+.item-company a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.item-company a::after {
+    content: ' ↗';
+    font-size: 0.85em;
+    margin-left: 0.3rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.item-company a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.item-company a:hover::after {
+    opacity: 1;
+    margin-left: 0.5rem;
+}
+
+.item-institution {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0.3rem 0;
+    font-weight: 500;
+    flex-basis: 100%;
+}
+
+.item-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-basis: 100%;
+}
+
+.item-duration {
+    font-size: clamp(0.95rem, 1.8vw, 1.3rem);
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.employment-type {
+    display: inline-block;
+    background: rgba(var(--main-color-rgb, 52, 211, 153), 0.2);
+    color: var(--main-color);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: clamp(0.85rem, 1.8vw, 1.2rem);
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    margin-top: 0;
+}
+
+/* Certificate Button Styling */
+.certificate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--main-color), rgba(52, 211, 153, 0.8));
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: clamp(0.95rem, 1.8vw, 1.35rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    margin-left: auto;
+    align-self: center;
+    box-shadow: 0 4px 12px rgba(52, 211, 153, 0.3);
+    white-space: nowrap;
+}
+
+.certificate-btn:hover {
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.9), var(--main-color));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 211, 153, 0.5);
+}
+
+.certificate-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(52, 211, 153, 0.3);
+}
+
+.certificate-btn i {
+    font-size: 1.1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .experience {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .experience-header h2 {
+        font-size: 2.4rem;
+    }
+
+    .experience-container {
+        gap: 2rem;
+    }
+
+    .experience-category {
+        padding-left: 1.5rem;
+        border-left-width: 3px;
+    }
+
+    .item-title {
+        font-size: clamp(1.2rem, 5vw, 2rem);
+    }
+
+    .item-company {
+        font-size: clamp(1rem, 4.5vw, 1.4rem);
+    }
+
+    .item-institution {
+        font-size: clamp(0.95rem, 4vw, 1.3rem);
+    }
+
+    .item-duration {
+        font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+    }
+
+    .employment-type {
+        font-size: clamp(0.8rem, 3.5vw, 1.1rem);
+    }
+
+    .experience-item {
+        padding: 1.2rem;
+    }
+
+    .experience-item:hover {
+        transform: translateX(5px);
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        padding: 2rem 0.75rem 1.5rem;
+    }
+
+    .experience-header h2 {
+        font-size: 2rem;
+    }
+
+    .category-title {
+        font-size: 1.4rem;
+    }
+
+    .item-title {
+        font-size: clamp(1.1rem, 6.5vw, 1.8rem);
+    }
+
+    .item-company {
+        font-size: clamp(0.95rem, 5.5vw, 1.3rem);
+    }
+
+    .item-institution {
+        font-size: clamp(0.9rem, 5vw, 1.2rem);
+    }
+
+    .item-duration {
+        font-size: clamp(0.85rem, 4.5vw, 1.1rem);
+    }
+
+    .employment-type {
+        font-size: clamp(0.75rem, 4.5vw, 1rem);
+    }
+
+    .experience-items {
+        gap: 1rem;
+    }
+
+    .experience-item {
+        padding: 1rem;
+    }
+
+    .item-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Experience Section Styling Ends */

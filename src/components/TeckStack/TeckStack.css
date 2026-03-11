@@ -8,7 +8,7 @@
 .techstack-container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 clamp(3%, 5vw, 5%);
+  /* padding: 0 clamp(3%, 5vw, 5%); */
 }
 
 .techstack-header {

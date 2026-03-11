@@ -9,6 +9,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Services from './components/Services/Services'; // About component (renamed from Services)
 import Portfolio from './components/Portfolio/Portfolio';
+import Experience from './components/Experiences/Experience';
 import TeckStack from './components/TeckStack/TeckStack';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
@@ -25,7 +26,7 @@ const MainPage = () => {
     });
 
     ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-    ScrollReveal().reveal('.home-img, .services-container, .techstack-container, .portfolio-box, .Contact form', { origin: 'bottom' });
+    ScrollReveal().reveal('.home-img, .services-container, .techstack-container, .portfolio-box, .Contact form, .experience-container', { origin: 'bottom' });
     ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'right' });
     ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left' });
   }, []);
@@ -34,6 +35,7 @@ const MainPage = () => {
     <>
       <Header />
       <Home />
+      <Experience />
       <TeckStack />
       <Services />
       <Portfolio />
