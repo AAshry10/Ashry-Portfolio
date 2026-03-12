@@ -85,8 +85,8 @@ const Home = () => {
         <p>
           Motivated Software Engineer with experience in front-end web
           development and enterprise software support. Skilled in building
-          responsive web applications using React.js and . Experienced in
-          working with Odoo ERP systems, providing technical support, system
+          responsive web applications using React.js . Experienced in
+          working with Odoo ERP systems, providing functional support, system
           configuration, and troubleshooting for business operations. Passionate
           about creating efficient digital solutions, improving user experience,
           and continuously learning new technologies
