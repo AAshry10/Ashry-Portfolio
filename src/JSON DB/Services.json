@@ -28,7 +28,7 @@
   },
   {
     "id": 3,
-    "title": "Odoo Implementation",
+    "title": "Odoo ERP Implementation",
     "description": "End-to-end Odoo implementation including system setup, module configuration, and business workflow optimization to help companies manage their operations efficiently.",
     "background": "linear-gradient(135deg, #875A7B 0%, #875A7B 100%)",
     "popuplogo": "fa-solid fa-gears",
