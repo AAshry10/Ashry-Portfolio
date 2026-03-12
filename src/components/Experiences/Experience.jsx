@@ -52,7 +52,7 @@ const Experience = () => {
                 <h4 className="item-title">{item.title}</h4>
                 <p className="item-company">
                   <a href={item.CompanyWebsiteURL} target="_blank" rel="noopener noreferrer">
-                    {item.company}
+                    @ {item.company}
                   </a>
                 </p>
                 <p className="item-meta">
