@@ -3,15 +3,21 @@
         "id": 1,
         "courses" : [
             {
+                "courseName": "Odoo Functional Course",
+                "institution": "Udemy - Yossef Elsherif",
+                "duration": "Feb 2026 - Mar 2026",
+                "certificateImage" : "/assets/Images/Certificates/Udemy Odoo Functional Course Certificate.jpg"
+            },
+            {
                 "courseName": "React - The Complete Guide - 2025",
-                "institution": "Udemy - React The Complete Guide",
+                "institution": "Udemy - Maximilian Shwarzmuller",
                 "duration": "Oct 2025 - Jan 2026",
                 "certificateImage" : "/assets/Images/Certificates/Udemy ReactJS Certificate.jpg"
             },
             {
                 "courseName": "Front-End Development Course",
                 "institution": "ITI - Information Technology Institute",
-                "duration": "Jul 2024- Sep 2023",
+                "duration": "Jul 2024 - Sep 2023",
                 "certificateImage" : "/assets/Images/Certificates/ITI Certificate.jpg"
             },
             {
