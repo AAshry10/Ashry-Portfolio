@@ -155,7 +155,7 @@
 
 .employment-type {
     display: inline-block;
-    background: rgba(var(--main-color-rgb, 52, 211, 153), 0.2);
+    background: rgba(var(--main-color, 52, 211, 153), 0.2);
     color: var(--main-color);
     padding: 0.4rem 1rem;
     border-radius: 20px;
