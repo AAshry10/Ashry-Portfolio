@@ -149,7 +149,7 @@ const Home = () => {
         />
         <div className="avatar-info">
           <h3>Ahmed ELashry</h3>
-          <p>Software Engineer • Frontend Developer</p>
+          <p>Software Engineer • Frontend Developer • Odoo Implementer</p>
         </div>
       </div>
     </section>
