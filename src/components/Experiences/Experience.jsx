@@ -12,7 +12,7 @@ const Experience = () => {
     setExperiences(experienceData);
   }, []);
 
-  const getCourses = () => experiences.find(exp => exp.id === 1)?.courses || [];
+  const getCourses = () => experiences.find(exp => exp.id === 1)?.Certifications || [];
   const getPositions = () => experiences.find(exp => exp.id === 2)?.positions || [];
   const getEducation = () => experiences.find(exp => exp.id === 3)?.Education || [];
 
@@ -32,7 +32,7 @@ const Experience = () => {
       <div className="experience-items">
         {items.map((item, index) => (
           <div key={index} className="experience-item">
-            {category === 'Courses' ? (
+            {category === 'Certifications' ? (
               <>
                 <h4 className="item-title">{item.courseName}</h4>
                 <p className="item-institution">{item.institution}</p>
@@ -100,7 +100,7 @@ const Experience = () => {
       <div className="experience-container">
         {renderExperienceCategory('Work Experience', getPositions())}
         {renderExperienceCategory('Education', getEducation())}
-        {renderExperienceCategory('Courses', getCourses())}
+        {renderExperienceCategory('Certifications', getCourses())}
       </div>
 
       <CertificatePopup 

@@ -1,7 +1,13 @@
 [
     {
         "id": 1,
-        "courses" : [
+        "Certifications" : [
+            {
+                "courseName": "Odoo V.19 Certificate",
+                "institution": "Odoo - One Iteration",
+                "duration": "Jul 2026",
+                "certificateImage" : "/assets/Images/Certificates/Odoo 19 Certificate.png"  
+            },
             {
                 "courseName": "Odoo Functional Course",
                 "institution": "Udemy - Yossef Elsherif",
@@ -32,7 +38,7 @@
         "id": 2,
         "positions": [
             {
-                "title": "Odoo Customer Support",
+                "title": "Odoo Support Engineer",
                 "company": "One Iteration",
                 "CompanyWebsiteURL": "https://www.one-iteration.com",
                 "duration": "FEB 2026 - Present",
