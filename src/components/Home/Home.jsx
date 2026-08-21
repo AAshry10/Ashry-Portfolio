@@ -144,7 +144,7 @@ const Home = () => {
 
       <div className="home-img">
         <img
-          src="/assets/Images/Personal/Me Grad - Cropped.jpg"
+          src="/assets/Images/Personal/Me Grad.jpg"
           alt="Ahmed ELashry"
         />
         <div className="avatar-info">
