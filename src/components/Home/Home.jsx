@@ -56,7 +56,7 @@ const Home = () => {
     const url = '/assets/My Resume (1).pdf'; // Change this to your actual CV file
 
     // Try to open the CV in a new tab so it can be viewed in-browser
-    const newTab = window.open(url, '_blank', 'noopener,noreferrer');
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   // Check if there are positions in Experience.json
