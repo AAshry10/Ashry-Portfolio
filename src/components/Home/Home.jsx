@@ -40,15 +40,23 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [displayedText, currentTextIndex, isDeleting, texts]);
 
-  const handleDownloadCV = () => {
-    // Create a link element
-    const link = document.createElement('a');
-    // Set the file path - update this path to your actual CV file
-    link.href = '/assets/Ashry CV.pdf'; // Change this to your actual CV file
-    link.download = 'Ashry CV.pdf'; // The name for the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  // const handleDownloadCV = () => {
+  //   // Create a link element
+  //   const link = document.createElement('a');
+  //   // Set the file path - update this path to your actual CV file
+  //   link.href = '/assets/Ashry CV.pdf'; // Change this to your actual CV file
+  //   link.download = 'Ashry CV.pdf'; // The name for the downloaded file
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
+
+  const handleDownloadCV = (autoDownload = false) => {
+    // URL to the CV file - update if needed
+    const url = '/assets/My Resume (1).pdf'; // Change this to your actual CV file
+
+    // Try to open the CV in a new tab so it can be viewed in-browser
+    const newTab = window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   // Check if there are positions in Experience.json
@@ -94,7 +102,7 @@ const Home = () => {
 
         <div className="hero-buttons">
           <button onClick={handleDownloadCV} className="btn download-resume">
-            Download Resume
+            Show Resume
           </button>
           <a href="#portfolio" className="btn-secondary see-projects">
             Explore Projects
