@@ -34,8 +34,8 @@
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
-    min-height: 100vh;
-    padding: clamp(8rem, 12vw, 12rem) clamp(3%, 5vw, 5%) clamp(3rem, 5vw, 4rem);
+    min-height: auto;
+    padding: clamp(8rem, 12vw, 12rem) clamp(3%, 5vw, 5%) var(--home-experience-gap);
 }
 
 .home-content {
@@ -282,7 +282,7 @@
 /*Home Responsive Styles*/
 @media (max-width: 1200px) {
     .home{
-        padding: clamp(6rem, 8vw, 8rem) clamp(3%, 4vw, 4%) clamp(1.5rem, 2vw, 2rem);
+        padding: clamp(6rem, 8vw, 8rem) clamp(3%, 4vw, 4%) var(--home-experience-gap);
     }
 }
 
@@ -291,7 +291,7 @@
         flex-direction: column;
         text-align: left;
         gap: 2rem;
-        padding: 12rem 4% 4rem;
+        padding: 12rem 4% var(--home-experience-gap);
     }
 
     .home-content {
@@ -333,7 +333,7 @@
 
 @media (max-width: 617px) {
     .home{
-        padding: clamp(8rem, 12vw, 12rem) clamp(2%, 3vw, 3%) clamp(2rem, 4vw, 4rem);
+        padding: clamp(8rem, 12vw, 12rem) clamp(2%, 3vw, 3%) var(--home-experience-gap);
     }
 
     .home-content h1{
@@ -358,7 +358,7 @@
 
 @media (max-width: 450px) {
     .home{
-        padding: clamp(8rem, 12vw, 12rem) clamp(2%, 3vw, 3%) clamp(2rem, 4vw, 4rem);
+        padding: clamp(8rem, 12vw, 12rem) clamp(2%, 3vw, 3%) var(--home-experience-gap);
     }
 
     .home-content h1{

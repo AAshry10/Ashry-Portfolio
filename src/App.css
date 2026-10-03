@@ -11,6 +11,7 @@
     --border-color: #4a5568;
     --snd-bg-color: #323946;
     --success-color: #38a169;
+    --home-experience-gap: clamp(4rem, 6vw, 6rem);
 }
 
 *{
@@ -42,4 +43,15 @@ section{
 .App {
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+@media (max-width: 991px) {
+    :root { --home-experience-gap: 4rem; }
+}
+
+@media (max-width: 768px) {
+    :root { --home-experience-gap: 3rem; }
+}
+
+@media (max-width: 480px) {
+    :root { --home-experience-gap: 2rem; }
 }

@@ -1,0 +1,127 @@
+.odoo-affiliate {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    width: 90%;
+    margin: 0 auto ;
+    padding: 1.6rem;
+    border: 2px solid #b8a7ff;
+    border-radius: 14px;
+    background: #1c1c1c;
+    color: #f5f5f5;
+}
+
+.odoo-affiliate-icon {
+    display: grid;
+    flex: 0 0 4.4rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    place-items: center;
+    border-radius: 1rem;
+    background: #f0edff;
+    color: #5143bd;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.odoo-affiliate-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+.odoo-affiliate-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.2rem;
+    font-size: 1.6rem;
+}
+
+.odoo-affiliate-copy p {
+    margin: 0;
+    color: #f1e7d0;
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+.odoo-affiliate-cta {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem 1.4rem;
+    border-radius: 1rem;
+    background: #594bb8;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.odoo-affiliate-cta:hover {
+    transform: translateY(-1px);
+    background: #6b5bd1;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .odoo-affiliate {
+        width: calc(100% - 3rem);
+        gap: 0.8rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .odoo-affiliate-icon {
+        flex-basis: 3.4rem;
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+
+    .odoo-affiliate-heading {
+        gap: 0.7rem;
+        font-size: 1.4rem;
+    }
+
+    .odoo-recommendation {
+        font-size: 1rem;
+    }
+
+    .odoo-affiliate-copy p {
+        font-size: 1.1rem;
+    }
+
+    .odoo-affiliate-cta {
+        padding: 0.8rem 0.9rem;
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 430px) {
+    .odoo-affiliate {
+        flex-wrap: wrap;
+    }
+
+    .odoo-affiliate-copy {
+        flex: 1 1 calc(100% - 5rem);
+    }
+
+    .odoo-affiliate-cta {
+        margin-left: auto;
+    }
+}
+
+.odoo-affiliate-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.odoo-affiliate-cta {
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}

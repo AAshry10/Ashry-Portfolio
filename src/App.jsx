@@ -7,6 +7,7 @@ import './App.css';
 // Import components
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import OdooAffiliate from './components/Odoo Affiliate/OdooAffiliate';
 import Services from './components/Services/Services'; // About component (renamed from Services)
 import Portfolio from './components/Portfolio/Portfolio';
 import Experience from './components/Experiences/Experience';
@@ -35,6 +36,7 @@ const MainPage = () => {
     <>
       <Header />
       <Home />
+      <OdooAffiliate />
       <Experience />
       <TeckStack />
       <Services />

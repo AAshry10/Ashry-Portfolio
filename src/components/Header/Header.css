@@ -58,6 +58,41 @@
     color: var(--accent-color);
 }
 
+.odoo-affiliate-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.odoo-affiliate-btn:hover {
+    color: var(--bg-color);
+    background: var(--accent-color);
+}
+
+.odoo-wordmark {
+    margin: 0 0.3rem;
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", sans-serif;
+    font-size: 1.15em;
+    font-weight: 700;
+    letter-spacing: -0.08em;
+    text-transform: lowercase;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .header-social {
     display: flex;
     gap: 1rem;
@@ -109,8 +144,17 @@
         text-decoration: none !important;
     }
 
+    .odoo-affiliate-btn {
+        padding: 0.7rem 1rem;
+        font-size: 1.2rem;
+    }
+
     .header-social {
         display: none;
+    }
+
+    .header-actions {
+        gap: 0;
     }
 }
 
@@ -141,6 +185,18 @@
         margin: 2rem 0;
         padding: 1rem 0;
         text-decoration: none !important;
+    }
+
+    .header-actions {
+        margin-left: auto;
+    }
+
+    #menu-icon {
+        margin-left: 1rem;
+    }
+
+    .odoo-affiliate-btn {
+        margin-left: 0;
     }
 }
 /*Header Styling Ends*/

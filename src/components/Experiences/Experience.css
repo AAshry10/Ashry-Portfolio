@@ -1,7 +1,7 @@
 /* Experience Section Styling Starts */
 .experience {
     background: var(--bg-color);
-    padding: clamp(4rem, 6vw, 6rem) clamp(3%, 4vw, 4%) clamp(2rem, 3vw, 3rem);
+    padding: var(--home-experience-gap) clamp(3%, 4vw, 4%) clamp(2rem, 3vw, 3rem);
 }
 
 .experience-header {
@@ -204,7 +204,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .experience {
-        padding: 3rem 1rem 2rem;
+        padding: var(--home-experience-gap) 1rem 2rem;
     }
 
     .experience-header h2 {
@@ -251,7 +251,7 @@
 
 @media (max-width: 480px) {
     .experience {
-        padding: 2rem 0.75rem 1.5rem;
+        padding: var(--home-experience-gap) 0.75rem 1.5rem;
     }
 
     .experience-header h2 {

@@ -60,7 +60,8 @@ const Header = () => {
         </a>
       </nav>
 
-      <div className="header-social">
+      <div className="header-actions">
+        <div className="header-social">
         <a href="https://github.com/AAshry10" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-github"></i>
         </a>
@@ -72,6 +73,16 @@ const Header = () => {
         </a>
         <a href='https://wa.me/+96565986338' target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-whatsapp"></i>
+        </a>
+        </div>
+
+        <a
+          className="odoo-affiliate-btn"
+          href="https://www.odoo.com/r/aff-ashweb"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Try <span className="odoo-wordmark">odoo</span> ERP
         </a>
       </div>
 
