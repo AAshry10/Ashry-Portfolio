@@ -125,3 +125,33 @@
     cursor: pointer;
     font-family: inherit;
 }
+
+@media (max-width: 768px) {
+    .odoo-affiliate {
+        flex-wrap: wrap;
+    }
+
+    .odoo-affiliate-copy {
+        flex: 1 1 calc(100% - 5rem);
+    }
+
+    .odoo-affiliate-demo-btn {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .odoo-affiliate-try-btn {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .odoo-affiliate-demo-btn {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .odoo-affiliate-try-btn {
+        margin-left: auto;
+    }
+}

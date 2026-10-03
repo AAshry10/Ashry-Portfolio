@@ -20,7 +20,7 @@ const OdooAffiliate = () => {
         </div>
 
         <button
-          className="odoo-affiliate-cta"
+          className="odoo-affiliate-cta odoo-affiliate-demo-btn"
           type="button"
           onClick={() => setIsDemoOpen(true)}
         >
@@ -28,12 +28,12 @@ const OdooAffiliate = () => {
         </button>
 
         <a
-          className="odoo-affiliate-cta"
+          className="odoo-affiliate-cta odoo-affiliate-try-btn"
           href="https://www.odoo.com/r/aff-ashweb"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Try Odoo now <span aria-hidden="true"></span>
+          Try Odoo now <span aria-hidden="true">&rarr;</span>
         </a>
       </aside>
 
